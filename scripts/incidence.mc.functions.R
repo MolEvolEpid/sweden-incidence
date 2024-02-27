@@ -112,6 +112,14 @@ find.cdf <- function(pdf, tolerance = 0.01){
   return(cdf_fn)
 }
 
+#function to find mean of infection age distributions
+find.pdf.mean <- function(pdf){
+  #find integrand to calculate mean
+  integrand <- pdf
+  integrand$y <- pdf$x*pdf$y
+  mean <- integrate.num(integrand, lower = min(pdf$x), upper = max(pdf$x))
+}
+
 date2decimal <- function(date){
   as.double(as.Date(date, "%Y-%m-%d"))/365.25 + 1970
 }

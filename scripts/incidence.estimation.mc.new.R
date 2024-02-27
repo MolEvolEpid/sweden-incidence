@@ -334,3 +334,12 @@ for(i in seq_along(risks.grouped)){
 names(draws_2015_plus) <- risks.grouped[1:3]
 saveRDS(draws_2015_plus, file = "TI_2015_plus.rds")
 sapply(draws_2015_plus, FUN = quantile, probs = c(0.5, 0.75, 0.95))
+
+#make table of summary stats for infection distributions
+
+#find median, 2.5th and 97.5th percentiles for each patient's time since infection
+TI_quantiles <- lapply(inf_icdfs, 
+                       FUN = function(icdf, p){icdf(p)},
+                       p = c(0.025, 0.5, 0.975))
+
+TI_means <- sapply(infection.ages, FUN = find.pdf.mean)
