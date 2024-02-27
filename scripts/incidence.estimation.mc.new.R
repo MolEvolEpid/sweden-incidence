@@ -351,5 +351,7 @@ TI_summary_stats <- data.frame(patient_ID = infection.ages$patient_ID,
                             quantile2.5 = TI_quantiles[1,],
                             quantile97.5 = TI_quantiles[3,])
 
-saveRDS(TI_summary_stats, file = "TI_summary_stats.rds")
-write.csv(TI_summary_stats, file = "TI_summary_stats.csv", row.names = FALSE)
+saveRDS(TI_summary_stats, file = paste0("TI_summary_stats.", prior, ".", date_tag, ".rds"))
+write.csv(TI_summary_stats, 
+          file = paste0("TI_summary_stats.", prior, ".", date_tag, ".csv"), 
+                        row.names = FALSE)
