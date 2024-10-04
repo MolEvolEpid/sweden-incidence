@@ -16,3 +16,4 @@ The codes decribed below and available in this repositry require the package **b
 
 **incidence.stat.plots.R** : Produces all figures relating to the incidence estimation.
 
+Please note these files will not be maintained by the original author, and may see no maintance at all in the future.
