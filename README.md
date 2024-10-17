@@ -6,7 +6,7 @@ https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2024.29.42.2400058
 
 The codes decribed below and available in this repositry require the package **biophybreak** available throught the following link https://github.com/MolEvolEpid/biophybreak, and can be installed into your R libraries repositry.
 
-**prep.incidence.data.new.R** : Takes the required files containing demographic data and biomarker data to construct the dataframe of the required strcutre in order to create the file required to be passed in the incidence estimation.
+**prep.incidence.data.new.R** : Takes the required files containing demographic data and biomarker data to construct the dataframe of the required structure in order to create the file required to be passed in the incidence estimation.
 
 **incidence.mc.functions.R** : Contains all the required functions to be using in **incidence.estimation.mc.new.R** in order to estimate incidence.
 
