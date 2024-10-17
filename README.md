@@ -1,8 +1,8 @@
 # Sweden surpasses the UNAIDS 95-95-95 Target: Estimating HIV-1 incidence between 2003-2022
 
-The following codes have been used to generate the results found in the paper "Sweden surpasses the UNAIDS 95-95-95 Target: Estimating HIV-1 incidence between 2003-2022" published in Eurosurveillance on the mm-dd-yyyy.
+The following codes have been used to generate the results found in the paper "Sweden surpasses the UNAIDS 95-95-95 Target: Estimating HIV-1 incidence between 2003-2022" published in Eurosurveillance on the 10-17-2024.
 
-insert link to paper.
+https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2024.29.42.2400058 (https://doi.org/10.2807/1560-7917.ES.2024.29.42.2400058)
 
 The codes decribed below and available in this repositry require the package **biophybreak** available throught the following link https://github.com/MolEvolEpid/biophybreak, and can be installed into your R libraries repositry.
 
